@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chez Mamie Moustache, crêperie chaleureuse à Fontenay-le-Comte. Galettes généreuses, crêpes gourmandes et accueil convivial.">
+  <meta name="description" content="Chez Mamie Moustache, crêperie familiale à Fontenay-le-Comte. Galettes généreuses, crêpes gourmandes et accueil convivial.">
+  <meta name="theme-color" content="#7b2f22">
   <title>Chez Mamie Moustache | Crêperie à Fontenay-le-Comte</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +18,8 @@
       <span class="brand-name">Mamie Moustache</span>
       <span class="moustache" aria-hidden="true">〰</span>
     </a>
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-    <nav>
+    <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+    <nav id="main-nav" aria-label="Navigation principale">
       <a href="#histoire">Notre histoire</a>
       <a href="#specialites">Nos spécialités</a>
       <a href="#restaurant">Le restaurant</a>
@@ -50,7 +51,7 @@
         <blockquote>« Il n’est jamais trop tard pour entreprendre et partager ce que l’on aime. »</blockquote>
       </div>
       <div class="story-card">
-        <img src="assets/facade.jpeg" alt="Façade de la crêperie Chez Mamie Moustache">
+        <img src="facade.jpeg" alt="Façade de la crêperie Chez Mamie Moustache" loading="lazy">
         <div class="story-badge">
           <strong>Ouverte depuis juin 2026</strong>
           <span>5 rue Lecomte</span>
@@ -64,37 +65,23 @@
         <h2>Nos spécialités</h2>
         <p>Une sélection simple, gourmande et généreuse, préparée avec soin.</p>
       </div>
-
       <div class="cards">
         <article class="food-card">
-          <img src="assets/galette-normande.jpeg" alt="Galette normande">
-          <div class="food-content">
-            <h3>La Normande</h3>
-            <p>Camembert fondant, andouille de Vire et compotée de pommes.</p>
-          </div>
+          <img src="galette-normande.jpeg" alt="Galette normande au camembert et à l'andouille de Vire" loading="lazy">
+          <div class="food-content"><h3>La Normande</h3><p>Camembert fondant, andouille de Vire et compotée de pommes.</p></div>
         </article>
         <article class="food-card">
-          <img src="assets/galette-saucisse.webp" alt="Galette saucisse">
-          <div class="food-content">
-            <h3>La Galette Saucisse</h3>
-            <p>Une recette généreuse, servie avec ses garnitures et sa salade.</p>
-          </div>
+          <img src="galette-saucisse.webp" alt="Galette saucisse" loading="lazy">
+          <div class="food-content"><h3>La Galette Saucisse</h3><p>Une recette généreuse, servie avec ses garnitures et sa salade.</p></div>
         </article>
         <article class="food-card">
-          <img src="assets/crepe-pommes.webp" alt="Crêpe aux pommes et caramel beurre salé">
-          <div class="food-content">
-            <h3>La Crêpe Gourmande</h3>
-            <p>Pommes fondantes, caramel beurre salé et amandes effilées.</p>
-          </div>
+          <img src="crêpe-pommes.webp" alt="Crêpe aux pommes et caramel beurre salé" loading="lazy">
+          <div class="food-content"><h3>La Crêpe Gourmande</h3><p>Pommes fondantes, caramel beurre salé et amandes effilées.</p></div>
         </article>
       </div>
-
       <div class="menu-note">
-        <div>
-          <h3>Une carte qui évolue au fil des envies</h3>
-          <p>Galettes traditionnelles, recettes du moment, salades fraîches et crêpes maison.</p>
-        </div>
-        <a class="btn btn-outline" href="assets/carte.webp" target="_blank" rel="noopener">Voir l’ardoise</a>
+        <div><h3>Une carte qui évolue au fil des envies</h3><p>Galettes traditionnelles, recettes du moment, salades fraîches et crêpes maison.</p></div>
+        <a class="btn btn-outline" href="tel:+33251518496">Demander la carte du jour</a>
       </div>
     </section>
 
@@ -105,11 +92,11 @@
         <p>Pour un déjeuner gourmand, un dîner en famille ou une soirée entre amis.</p>
       </div>
       <div class="gallery">
-        <img class="gallery-wide" src="assets/salle.webp" alt="Salle principale de la crêperie">
-        <img src="assets/salle-2.webp" alt="Coin de la salle">
-        <img src="assets/bar.webp" alt="Bar de la crêperie">
-        <img src="assets/plats.webp" alt="Assiettes fraîcheur">
-        <img src="assets/table-galettes.webp" alt="Galettes servies à table">
+        <img class="gallery-wide" src="salle.webp" alt="Salle principale de la crêperie" loading="lazy">
+        <img src="salle-2.webp" alt="Coin de la salle" loading="lazy">
+        <img src="bar.webp" alt="Bar de la crêperie" loading="lazy">
+        <img src="plats.webp" alt="Assiettes servies à la crêperie" loading="lazy">
+        <img src="table-galettes.webp" alt="Galettes servies à table" loading="lazy">
       </div>
     </section>
 
@@ -117,20 +104,10 @@
       <div class="practical-card">
         <p class="eyebrow dark">Informations pratiques</p>
         <h2>Venez nous rendre visite</h2>
-
         <div class="info-grid">
-          <div>
-            <h3>Adresse</h3>
-            <p>5 Rue Lecomte<br>85200 Fontenay-le-Comte</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=5+Rue+Lecomte+85200+Fontenay-le-Comte" target="_blank" rel="noopener">Ouvrir l’itinéraire</a>
-          </div>
-          <div>
-            <h3>Réservation</h3>
-            <p><a href="tel:+33251518496">02 51 51 84 96</a></p>
-            <p>Réservation conseillée.</p>
-          </div>
+          <div><h3>Adresse</h3><p>5 Rue Lecomte<br>85200 Fontenay-le-Comte</p><a href="https://www.google.com/maps/search/?api=1&amp;query=5+Rue+Lecomte+85200+Fontenay-le-Comte" target="_blank" rel="noopener">Ouvrir l’itinéraire</a></div>
+          <div><h3>Réservation</h3><p><a href="tel:+33251518496">02 51 51 84 96</a></p><p>Réservation conseillée.</p></div>
         </div>
-
         <div class="hours">
           <h3>Horaires</h3>
           <div class="hours-grid">
@@ -143,14 +120,13 @@
             <span>Dimanche</span><strong>12h30 – 14h00</strong>
           </div>
         </div>
-
         <div class="practical-actions">
           <a class="btn btn-primary" href="tel:+33251518496">Appeler maintenant</a>
-          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=5+Rue+Lecomte+85200+Fontenay-le-Comte" target="_blank" rel="noopener">Itinéraire</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=5+Rue+Lecomte+85200+Fontenay-le-Comte" target="_blank" rel="noopener">Itinéraire</a>
         </div>
       </div>
       <div class="map-visual">
-        <img src="assets/facade.jpeg" alt="Devanture et terrasse de Chez Mamie Moustache">
+        <img src="facade.jpeg" alt="Devanture de Chez Mamie Moustache" loading="lazy">
         <div class="map-caption">Au cœur de Fontenay-le-Comte</div>
       </div>
     </section>
@@ -159,10 +135,7 @@
   <a class="floating-call" href="tel:+33251518496" aria-label="Appeler la crêperie">☎</a>
 
   <footer>
-    <div>
-      <strong>Chez Mamie Moustache</strong>
-      <span>Crêperie · 5 Rue Lecomte · Fontenay-le-Comte</span>
-    </div>
+    <div><strong>Chez Mamie Moustache</strong><span>Crêperie · 5 Rue Lecomte · Fontenay-le-Comte</span></div>
     <p>© 2026 Chez Mamie Moustache</p>
   </footer>
 
